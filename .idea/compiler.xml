@@ -10,5 +10,13 @@
         <module name="ProductService.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cqrs.DiscoveryServer" target="1.8" />
+      <module name="cqrs.DiscoveryServer.main" target="1.8" />
+      <module name="cqrs.DiscoveryServer.test" target="1.8" />
+      <module name="DiscoveryServer" target="1.8" />
+      <module name="DiscoveryServer.main" target="1.8" />
+      <module name="DiscoveryServer.test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

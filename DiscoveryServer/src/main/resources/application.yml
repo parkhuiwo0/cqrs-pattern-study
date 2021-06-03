@@ -1,0 +1,17 @@
+# Eureka Server에 port number 할당
+server:
+  port: 8761
+
+
+# [register-with-eureka : false] : 유레카 서버를 하나만 띄울 것이기에 false
+# [fetch-registry : false ] : client service가 eureka server로부터 서비스 리스트 정보를 local에 캐싱할 것인지?
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  # [instance.prefer-ip-address: true] : Hostname 말고 IP Address로 등록하는 것이 더 바람직한 선택이다.
+  instance:
+    prefer-ip-address: true
+#    hostname: localhost -> hostname으로 구성하고 싶으면.
