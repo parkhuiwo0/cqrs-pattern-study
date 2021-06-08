@@ -5,6 +5,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${instsanceId:${random.value}} # 동일 APP이 여러 개 떴을 때 구분하기 위해
 
 spring:
   application:
