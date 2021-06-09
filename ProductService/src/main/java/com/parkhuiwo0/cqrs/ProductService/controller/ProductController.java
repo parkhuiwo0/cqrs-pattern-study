@@ -41,6 +41,6 @@ public class ProductController {
         }
 
 
-        return "product created ! " + request.getTitle();
+        return returnValue;
     }
 }
