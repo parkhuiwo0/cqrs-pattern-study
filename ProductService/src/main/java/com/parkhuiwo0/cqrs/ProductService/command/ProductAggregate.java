@@ -23,7 +23,7 @@ public class ProductAggregate {
             throw new IllegalStateException("제품의 가격은 0보다 작을 수 없습니다.");
         }
 
-        if (createProductCommand.getTitle() == null || createProductCommand.getTitle().isBlank()) {
+        if (createProductCommand.getTitle() == null) { // || createProductCommand.getTitle().isBlank()
             throw new IllegalStateException("제품명은 빈 값일 수 없습니다.");
         }
 
